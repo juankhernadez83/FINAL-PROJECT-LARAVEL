@@ -3,6 +3,7 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
+<div class="container-fluid p-3 col-auto col-md"> 
     <h1 class="text-center text-primary">Unit of measurement</h1>
 
     <a href="{{ url('/formMeasure') }}" class="btn btn-secondary mb-3">Add unit of measurement</a>
@@ -30,4 +31,5 @@
         </table>
         
     </div>
+</div>
 @endsection
