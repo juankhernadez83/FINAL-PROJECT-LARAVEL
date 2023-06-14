@@ -19,7 +19,7 @@
 
           <div class="bg-dark p-3"> 
               <a class="d-flex text-decoration-none mt-1 align-items-center text-white" href="{{ url('/') }}">
-                <span class="fs-2 d-none d-sm-inline">  Inventory </span>
+                <span class="fs-2 d-none d-sm-inline ">  Inventory </span>
               </a>
               <hr class="text-white d-none d-sm-block ">
               <ul class="nav nav-pills flex-column mt-4"> 
