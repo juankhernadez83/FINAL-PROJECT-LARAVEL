@@ -1,0 +1,15 @@
+.nav-pills li a:hover {
+
+    background-color: blue;
+}
+
+
+.btn-search{
+
+    right: 5px;
+}
+
+.avatar{
+
+    max-width: 35px;
+}
