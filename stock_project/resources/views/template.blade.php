@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset ('style.css') }}">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <title>StoCk System</title>
@@ -29,20 +30,20 @@
                     </li>
                   
                   <li class="nav-item py-2 ps-sm-0">
-                    <a class="nav-link text-white" href="#"><i class="icon ion-md-swap fs-5"></i> 
+                    <a class="nav-link text-white" href="{{ url('/input') }}"><i class="icon ion-md-swap fs-5"></i> 
                       <span class="fs-4 m-2 d-none d-sm-inline">Intputs</span></a>
                   </li>
                   <li class="nav-item py-2 ps-sm-0">
-                    <a class="nav-link text-white" href="#"><i class="icon ion-md-swap fs-5"></i> 
+                    <a class="nav-link text-white" href="{{ url('/output') }}"><i class="icon ion-md-swap fs-5"></i> 
                       <span class="fs-4 m-2 d-none d-sm-inline"> Outputs</span></a>
                   </li>
                   <li class="nav-item py-2 ps-sm-0">
-                      <a class="nav-link text-white" href="#"><i class="icon ion-md-person fs-5"></i> 
+                      <a class="nav-link text-white" href="{{ url('/supplier') }}"><i class="icon ion-md-person fs-5"></i> 
                           <span class="fs-4 m-2 d-none d-sm-inline"> Suppliers </span></a>
                     </li>
                     <li class="nav-item py-2 ps-sm-0">
-                      <a class="nav-link text-white" href="#"><i class="icon ion-md-clipboard fs-5"></i> 
-                          <span class="fs-4 m-2 d-none d-sm-inline" > Reports </span></a>
+                      <a class="nav-link text-white" href="{{ url('/stock') }}"><i class="icon ion-md-clipboard fs-5"></i> 
+                          <span class="fs-4 m-2 d-none d-sm-inline" > Stock </span></a>
                     </li>
                   
                 </ul>                               

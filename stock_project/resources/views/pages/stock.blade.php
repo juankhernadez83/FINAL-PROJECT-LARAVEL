@@ -3,6 +3,7 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
+<div class="container-fluid p-3 col-auto col-md"> 
     <h1 class="text-center text-primary">Stock</h1>
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
@@ -26,4 +27,5 @@
         </table>
         
     </div>
+</div>
 @endsection

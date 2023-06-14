@@ -3,6 +3,8 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
+ 
+
     <h1 class="text-center text-primary">Add Output</h1>
 
     <!-- haciendo un llamado al name de la ruta de saveCourse -->
@@ -25,4 +27,5 @@
         
         <input type="submit" class="btn btn-success mt-3" value="Guardar Datos">
     </form>
+
 @endsection

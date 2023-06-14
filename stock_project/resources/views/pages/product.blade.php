@@ -14,11 +14,11 @@
         <table class="table table-light table-striped table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Product</th>
-                    <th scope="col">Measurement</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Supplier</th>                        
-                    <th scope="col">Actions</th>
+                    <th scope="col"><i class="icon ion-md-archive">Product</th>
+                    <th scope="col"> <i class="icon ion-md-barcode"> Measurement</th>
+                    <th scope="col"><i class="icon ion-md-pricetag">Price</th>
+                    <th scope="col"><i class="icon ion-md-person"> Supplier</th>                        
+                    <th scope="col"><i class="icon ion-md-cog">Actions</th>
                     </tr>
             </thead>
             @foreach ($product as $item)
