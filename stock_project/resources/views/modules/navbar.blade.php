@@ -13,13 +13,25 @@
                 <a class="nav-link" href="{{ url('/product') }}">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Inputs</a>
+                <a class="nav-link" href="{{ url('/input') }}">Inputs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Outputs</a>
+                <a class="nav-link" href="{{ url('/output') }}">Outputs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Suppliers</a>
+                <a class="nav-link" href="{{ url('/stock') }}">Stock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/supplier') }}">Suppliers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/measure') }}">Measure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/admin') }}">Admin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/rol') }}">Rol</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Reports</a>
