@@ -7,22 +7,21 @@
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
-        <table class="table table-light table-striped table-hover">
+    <table class="table table-light table-striped table-hover">
             <thead>
-                <tr>
-                    <th scope="col">Product</th> 
+                    <th scope="col">input</th>
+                    <th scope="col">output</th>
                     <th scope="col">Total</th>
-                </tr>
             </thead>
-            @foreach ($stock as $item)
-                <tbody>
+            <tbody>
+            @foreach ($Dato as $item)
                     <tr>
-                        <th scope="row">{{ $item->product }}</th>
-                        <td>{{ $item->total }}</td>
-                        
+                        <td>{{ $item->Conteo }}</td>
+                        <td>{{ $item->Conteo2 }}</td>
+                        <td>{{$item->Conteo - $item->Conteo2}}</td>
                     </tr>
-                </tbody>
             @endforeach
+            </tbody>
         </table>
         
     </div>

@@ -49,7 +49,8 @@ Route::get('/measure', [MeasureController::class, 'index'])->name('getMeasure');
 Route::get('/formMeasure', [MeasureController::class, 'viewForm'])->name('formMeasure');
 Route::post('/saveMeasure', [MeasureController::class, 'storeMeasure'])->name('saveMeasure');
 
-Route::get('/stock', [StockCotroller::class, 'index'])->name('getStock');
+//Route::get('/stock', [StockCotroller::class, 'index'])->name('getStock');
+Route::get('/stock', [StockCotroller::class, 'calculate'])->name('getStock');
 Route::get('/formStock', [StockCotroller::class, 'viewForm'])->name('formStock');
 Route::post('/saveStock', [StockCotroller::class, 'storeStock'])->name('saveStock');
 
