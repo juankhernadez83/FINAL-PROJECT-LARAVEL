@@ -3,7 +3,6 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
-<div class="container-fluid p-3 col-auto col-md"> 
     <h1 class="text-center text-primary">Roles</h1>
 
     <a href="{{ url('/formRol') }}" class="btn btn-secondary mb-3">Add Product</a>
@@ -31,5 +30,4 @@
         </table>
         
     </div>
-</div>
 @endsection
