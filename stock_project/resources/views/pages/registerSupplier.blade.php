@@ -15,7 +15,7 @@
                      <div class="container">
                               <div class="cover">
                                   <div class="front">
-                                    <img src="{{ url('/img/supplier.png.jpg') }}" alt="">
+                                    <img src="{{ url('/img/supplier.jpg') }}" alt="">
                                     
                                   </div>
                               </div>
