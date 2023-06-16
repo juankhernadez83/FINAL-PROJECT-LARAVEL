@@ -6,7 +6,7 @@
     <h1 class="text-center text-primary">Add Output</h1>
 
     <!-- haciendo un llamado al name de la ruta de saveCourse -->
-    <form action="{{ route('saveInput') }}" method="POST">
+    <form action="{{ route('saveOutput') }}" method="POST">
         <!-- solicitamos token para el envio de datos -->
         @csrf
         <label for="">Select a product</label>

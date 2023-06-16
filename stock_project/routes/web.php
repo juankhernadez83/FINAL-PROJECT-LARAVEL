@@ -30,19 +30,23 @@ Route::get('/', function () {
 
 Route::get('/product', [ProductController::class, 'index'])->name('getProducts');
 Route::get('/formProduct', [ProductController::class, 'viewForm'])->name('formProducts');
+Route::get('/productReport', [ProductController::class, 'indexR'])->name('productsReport');
 Route::post('/saveProduct', [ProductController::class, 'storeProduct'])->name('saveProduct');
 
 
 Route::get('/supplier', [SupplierController::class, 'index'])->name('getSuppliers');
 Route::get('/formSupplier', [SupplierController::class, 'viewForm'])->name('formSuppliers');
+Route::get('/supplierReport', [SupplierController::class, 'indexR'])->name('suppliersReport');
 Route::post('/saveSupplier', [SupplierController::class, 'storeSupplier'])->name('saveSuppliers');
 
 Route::get('/input', [InputController::class, 'index'])->name('getInput');
 Route::get('/formInput', [InputController::class, 'viewForm'])->name('formInput');
+Route::get('/inputReport', [InputController::class, 'indexR'])->name('inputsReport');
 Route::post('/saveInput', [InputController::class, 'storeInput'])->name('saveInput');
 
 Route::get('/output', [OutputController::class, 'index'])->name('getOutput');
 Route::get('/formOutput', [OutputController::class, 'viewForm'])->name('formOutput');
+Route::get('/outputReport', [OutputController::class, 'indexR'])->name('outputsReport');
 Route::post('/saveOutput', [OutputController::class, 'storeOutput'])->name('saveOutput');
 
 Route::get('/measure', [MeasureController::class, 'index'])->name('getMeasure');
