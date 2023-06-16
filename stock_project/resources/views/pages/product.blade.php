@@ -11,7 +11,7 @@
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
-        <table class="table table-light table-striped table-hover">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Product</th>

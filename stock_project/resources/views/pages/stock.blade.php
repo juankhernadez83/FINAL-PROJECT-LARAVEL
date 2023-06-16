@@ -8,10 +8,10 @@
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
-    <table class="table table-light table-striped table-hover">
+    <table class="table table-striped">
             <thead>
-                    <th scope="col">input</th>
-                    <th scope="col">output</th>
+                    <th scope="col">Input</th>
+                    <th scope="col">Output</th>
                     <th scope="col">Total</th>
             </thead>
             <tbody>
