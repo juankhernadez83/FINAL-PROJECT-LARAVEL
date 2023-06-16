@@ -4,7 +4,7 @@
 
 @section('dynamic_body')
 <div class="container-fluid p-3 col-auto col-md"> 
-    <h1 class="text-center text-primary">Suppliers</h1>
+    <h1 class="text-star text-black">Suppliers</h1>
 
     <a href="{{ url('/formSupplier') }}" class="btn btn-secondary mb-3">Add Supplier</a>
 
