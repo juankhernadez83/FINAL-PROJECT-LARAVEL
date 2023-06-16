@@ -10,7 +10,7 @@
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
         <table class="table table-light table-striped table-hover">
-            <thead>
+            <thead> 
                 <tr>
                     <th scope="col">Product</th>
                     <th scope="col">Quantity</th>

@@ -3,26 +3,61 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
-    <h1 class="text-center text-primary">Add Output</h1>
+ 
+<div class="container-fluid col-auto col-md"> 
+    
 
     <!-- haciendo un llamado al name de la ruta de saveCourse -->
     <form action="{{ route('saveInput') }}" method="POST">
         <!-- solicitamos token para el envio de datos -->
         @csrf
-        <label for="">Select a product</label>
-        <select name="product" class="form-control">
-            @foreach ($product as $item)
-                <option value="{{ $item->id }}">{{ $item->name }}</option>
-            @endforeach
-        </select>
+        <div class="body  d-flex col-auto col-md"> 
+                     <div class="container">
+                              <div class="cover">
+                                  <div class="front">
+                                    <img src="{{ url('/img/output.jpg') }}" alt="">
+                                    
+                                  </div>
+                              </div>
 
-        <label for="">Quantity</label>
-        <input type="text" name="quantity" class="form-control">
+                              <div class="forms">
+                                  <div class="form-content">
 
-        <label for="">Date of Output</label>
-        <input type="date" name="date_output" class="form-control">        
+                                  <div class="login-form">
+                                          <div class="title">Add Ouput</div>
+                                            <form action="#">
+                                                <div class="input-boxes">
+                                                  
+                                                    <div class="input-box">  
 
-        
-        <input type="submit" class="btn btn-success mt-3" value="Guardar Datos">
+                                                    <label for="">Select a product</label>
+                                                        <select name="product" class="form-control">
+                                                            @foreach ($product as $item)
+                                                                <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                                            @endforeach
+                                                        </select>
+
+                                                    </div>
+                                                    <div class="input-box"> 
+                                                            <label for="">Quantity</label>
+                                                            <input type="text" name="quantity" class="form-control">
+                                                    </div>
+
+                                                    <div class="input-box">
+                                                                <label for="">Date </label>
+                                                                <input type="date" name="date_input" class="form-control">        
+                                                    </div>
+                                                
+                                                    <input type="submit" class="btn btn-primary mt-3" value="Guardar Datos">
+
+                                                </div>
+
+                                         </form>
+
+
+                                  </div>
+            </div>
     </form>
+</div>
+
 @endsection

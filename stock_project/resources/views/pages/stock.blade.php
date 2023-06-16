@@ -3,14 +3,15 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
-    <h1 class="text-center text-primary">Stock</h1>
+<div class="container-fluid p-3 col-auto col-md"> 
+    <h1 class="text-star text-black">Stock</h1>
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
-    <table class="table table-light table-striped table-hover">
+    <table class="table table-striped">
             <thead>
-                    <th scope="col">input</th>
-                    <th scope="col">output</th>
+                    <th scope="col">Input</th>
+                    <th scope="col">Output</th>
                     <th scope="col">Total</th>
             </thead>
             <tbody>
@@ -25,4 +26,5 @@
         </table>
         
     </div>
+</div>
 @endsection
