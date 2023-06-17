@@ -17,7 +17,7 @@
                     <th scope="col">Quantity</th>
                     <th scope="col">Date of Input</th>                    
                     <th scope="col">Actions</th>
-                    </tr>
+                </tr>
             </thead>
             @foreach ($input as $item)
                 <tbody>
