@@ -5,7 +5,7 @@
 
     <a href="{{ url('/formProduct') }}" class="btn btn-secondary mb-3">Add Product</a>
 
-    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
+    <a href="{{ url('/productReport') }}" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
         <table class="table table-striped">
             <thead>

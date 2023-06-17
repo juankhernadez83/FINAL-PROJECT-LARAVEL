@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Input;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class InputController extends Controller
 {
@@ -14,6 +15,19 @@ class InputController extends Controller
         return view("pages.input", ["input" => $input]);
     }
 
+    public function indexR(){
+        $input = Input::join('product','input.id_product','=','product.id')
+                    ->select('input.*','product.name as product')
+                    ->orderBy('input.date_input')
+                    ->get();
+        
+        $dates = Input::join('product','input.id_product','=','product.id')
+                    ->groupBy('input.date_input')
+                    ->select('input.date_input as date', DB::raw('COUNT(input.date_input) as total'))
+                    ->get();                    
+        return view("pages.report-input", ["input" => $input, "dates" => $dates]);
+    }
+    
     public function viewForm(){
         $product = Product::all();
         return view("pages.registerInput", ["product" => $product]);

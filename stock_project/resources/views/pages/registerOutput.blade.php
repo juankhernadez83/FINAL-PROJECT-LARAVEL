@@ -8,7 +8,7 @@
     
 
     <!-- haciendo un llamado al name de la ruta de saveCourse -->
-    <form action="{{ route('saveInput') }}" method="POST">
+    <form action="{{ route('saveOutput') }}" method="POST">
         <!-- solicitamos token para el envio de datos -->
         @csrf
         <div class="body  d-flex col-auto col-md"> 

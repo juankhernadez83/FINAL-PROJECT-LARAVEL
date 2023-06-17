@@ -6,7 +6,7 @@
 <div class="container-fluid p-3 col-auto col-md"> 
     <h1 class="text-star text-black">Stock</h1>
 
-    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
+    <!-- <a href="#" class="btn btn-success mb-3" disabled="disabled">Create Report</a> -->
     <div class="row">
     <table class="table table-striped">
             <thead>

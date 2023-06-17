@@ -8,7 +8,7 @@
 
     <a href="{{ url('/formOutput') }}" class="btn btn-secondary mb-3">Add Output</a>
 
-    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
+    <a href="{{ url('/outputReport') }}" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
         <table class="table table-light table-striped table-hover">
             <thead>

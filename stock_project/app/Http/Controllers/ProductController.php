@@ -22,6 +22,15 @@ class ProductController extends Controller
         return view("pages.product", ["product" => $product]);
     }
 
+    public function indexR(){
+        $product = Product::join('measure','product.id_measure','=','measure.id')
+                        ->join('supplier','product.id_supplier','=','supplier.id')
+                    ->orderBy('price','desc')
+                    ->select('product.*','measure.name as measure', 'supplier.name as supplier')->get();
+        
+        return view("pages.report-product", ["product" => $product]);
+    }
+
     //metodo que retorna la vista para registrar un producto
     public function viewForm(){
         $measure = Measure::all();

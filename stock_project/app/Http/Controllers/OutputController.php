@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Output;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OutputController extends Controller
 {
@@ -12,6 +13,19 @@ class OutputController extends Controller
         
         //view() => retorna una vista
         return view("pages.output", ["output" => $output]);
+    }
+
+    public function indexR(){
+        $output = Output::join('product','output.id_product','=','product.id')
+                    ->select('output.*','product.name as product')
+                    ->orderBy('output.date_output')
+                    ->get();
+        
+        $dates = Output::join('product','output.id_product','=','product.id')
+                    ->groupBy('output.date_output')
+                    ->select('output.date_output as date', DB::raw('COUNT(output.date_output) as total'))
+                    ->get();                    
+        return view("pages.report-output", ["output" => $output, "dates" => $dates]);
     }
 
     public function viewForm(){
