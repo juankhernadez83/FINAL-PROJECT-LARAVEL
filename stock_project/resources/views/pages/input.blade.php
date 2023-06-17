@@ -3,14 +3,15 @@
 <!-- Haciendo referencia al yield de template.blade.php -->
 
 @section('dynamic_body')
-    <h1 class="text-center text-primary">Inputs</h1>
+<div class="container-fluid p-3 col-auto col-md"> 
+    <h1 class="text-star text-black">Inputs</h1>
 
     <a href="{{ url('/formInput') }}" class="btn btn-secondary mb-3">Add Input</a>
 
     <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
-        <table class="table table-light table-striped table-hover">
-            <thead> 
+        <table class="table table-striped">
+            <thead>
                 <tr>
                     <th scope="col">Product</th>
                     <th scope="col">Quantity</th>
@@ -34,4 +35,5 @@
         </table>
         
     </div>
+</div>
 @endsection
