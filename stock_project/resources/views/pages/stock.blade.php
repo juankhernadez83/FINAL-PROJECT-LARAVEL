@@ -5,7 +5,7 @@
 @section('dynamic_body')
     <h1 class="text-center text-primary">Stock</h1>
 
-    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
+    <!-- <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a> -->
     <div class="row">
         <table class="table table-light table-striped table-hover">
             <thead>

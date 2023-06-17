@@ -7,7 +7,7 @@
 
     <a href="{{ url('/formMeasure') }}" class="btn btn-secondary mb-3">Add unit of measurement</a>
 
-    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
+    <!-- <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a> -->
     <div class="row">
         <table class="table table-light table-striped table-hover">
             <thead>
