@@ -7,7 +7,7 @@
 
     <a href="{{ url('/formRol') }}" class="btn btn-secondary mb-3">Add Product</a>
 
-    <!-- <a href="#" class="btn btn-success mb-3" disabled="disabled">Create Report</a> -->
+    <a href="#" target="_blank" class="btn btn-success mb-3">Create Report</a>
     <div class="row">
         <table class="table table-light table-striped table-hover">
             <thead>
