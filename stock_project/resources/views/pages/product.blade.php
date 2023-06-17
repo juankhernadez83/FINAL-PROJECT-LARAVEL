@@ -1,3 +1,7 @@
+@extends('template')
+
+<!-- Haciendo referencia al yield de template.blade.php -->
+
 @section('dynamic_body')
 
 <div class="container-fluid p-3 col-auto col-md"> 
